@@ -18,16 +18,16 @@ jobs:
 
 
          - name: Check4
-           run: which docker compose
+           run: which "docker compose"
 
          - name: Check7
            run: echo $PATH
   
 
          - name: Check2
-           run: docker-compose --version
+           run: "docker compose" --version
 
          - name: Test
-           run: docker-compose run --rm app sh -c "python manage.py test"
+           run: docker compose run --rm app sh -c "python manage.py test"
          - name: Lint  
-           run: docker-compose run --rm app sh -c "flake8"           docker-compose run --rm app sh -c "python manage.py test"
+           run: docker compose run --rm app sh -c "flake8"           docker-compose run --rm app sh -c "python manage.py test"
