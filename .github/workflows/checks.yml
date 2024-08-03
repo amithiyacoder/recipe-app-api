@@ -16,6 +16,14 @@ jobs:
          - name: Checkout
            uses: actions/checkout@v2
 
+
+         - name: Check4
+           run: which docker-compose
+
+         - name: Check7
+           run: echo $PATH
+  
+
          - name: Check2
            run: docker-compose --version
 
