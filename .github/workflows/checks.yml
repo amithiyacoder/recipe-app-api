@@ -18,7 +18,7 @@ jobs:
 
 
          - name: Check4
-           run: which docker-compose
+           run: which docker compose
 
          - name: Check7
            run: echo $PATH
